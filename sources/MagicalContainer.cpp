@@ -10,12 +10,6 @@ MagicalContainer::MagicalContainer() {}
 
 MagicalContainer::~MagicalContainer()
 {
-    for (int element : elements)
-    {
-        delete &element;
-    }
-    elements.clear();
-
     for (int* prime : primes)
     {
         delete prime;
